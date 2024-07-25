@@ -18,7 +18,7 @@
             <div class="row d-flex">
                 <div class="col-12">
                     <ul class="list-unstyled" v-if="randomEmails.length == 10">
-                        <li v-for="email in randomEmails"> {{ email }}</li>
+                        <li v-for="email, index in randomEmails"><span class="me-3">{{index + 1}}</span> {{email }}</li>
                     </ul>
                 </div>
             </div>
