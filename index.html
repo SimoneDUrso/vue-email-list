@@ -13,10 +13,14 @@
 
 <body>
 
-    <div class="container" id="app">
-        <div class="row">
-            <div class="col-12">
-
+    <div id="app">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li v-for="email in randomEmails"> {{ email }}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
