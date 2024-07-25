@@ -7,6 +7,9 @@ createApp({
         }
     },
 
+    created() {
+        this.generateRandomEmails()
+    },
 
     methods: {
         generateRandomEmails() {
